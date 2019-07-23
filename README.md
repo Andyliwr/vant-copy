@@ -1,29 +1,20 @@
-# vant-copy
+# vant组件库模仿项目
 
-## Project setup
+## 用法
 ```
-yarn install
+npm install @andyliwr/vant
 ```
+### 全局引入
+在main.js中加入如下代码：
+```
+import vant from '@andyliwr/vant'
+import '@andyliwr/vant/lib/vant.css'
+Vue.use(vant)
+```
+然后就可以在页面中引入组件了
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+### 按需引入
+待完成....
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 联系作者
+如果你有啥疑问，可以邮件我（andyliwr@outlook.com）。
