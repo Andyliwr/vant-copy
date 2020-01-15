@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Button>asda</Button>
+    <Button @click="openShare">分享一下</Button>
+    <TradeShare :visable="showShare" @close="closeShare"></TradeShare>
   </div>
 </template>
 
@@ -8,7 +9,20 @@
 
 export default {
   name: 'app',
-  components: {}
+  components: {},
+  data: function() {
+    return {
+      showShare: false, // 是否展示分享组件
+    }
+  },
+  methods: {
+    openShare() {
+      this.showShare = !this.showShare;
+    },
+    closeShare() {
+      this.showShare = false;
+    }
+  }
 }
 </script>
 
